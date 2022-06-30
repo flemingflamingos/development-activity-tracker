@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- methodology.html -->
+<!-- Authors: Terrie-Ann Broomfield, Xin Wen, Peggy Wong -->
+<!-- Date Created: 2022-06-26 -->
+<!-- Date Modified: 2022-06-26 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Activity Tracker - City of Toronto</title>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="any">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 px-sm-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <b>Development Activity Tracker</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dark-blue-navbar" aria-controls="dark-blue-navbar" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dark-blue-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="methodology.html" data-bs-toggle="dropdown" aria-expanded="false">Methodology</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="methodology.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#data-acquisition-and-pre-processing">Data Acquisition & Pre-Processing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-map-viewer">ArcGIS Map Viewer</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-dashboards">ArcGIS Dashboards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-experience-builder">ArcGIS Experience Builder</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-storymaps">ArcGIS StoryMaps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#maintenance">Maintenance</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="results.html" data-bs-toggle="dropdown" aria-expanded="false">Results</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="results.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-maps">Web Maps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#dashboard">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-application">Web Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#story-map">Story Map</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#python-scripts">Python Scripts</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#supplemental-deliverables">Supplemental Deliverables</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Cover -->
+    <div class="cover px-3 py-5">
+      <div class="text-center px-3 py-5">
+        <p class="title">Methodology</p>
+      </div>
+    </div>
+    <!-- Main -->
+    <main class="container py-5">
+      <section id="overview">
+        <h1>Overview</h1>
+        <p>To meet the client requirements and the project objectives, a series of web solutions were developed using ArcGIS technology. Although the client initially requested a web map and a corresponding dashboard only, the team decided to expand the project scope and worked on a web application and a story map as well, allowing the public to access the information in multiple ways. ArcGIS API for Python was also used for data acquisition and pre-processing, web map setup and configuration, and automation management.</p>
+      </section>
+      <section id="data-acquisition-and-pre-processing">
+        <h1>Data Acquisition and Pre-Processing</h1>
+        <p>The first step was data acquisition and pre-processing, which was implemented using ArcGIS API for Python. The data acquisition and pre-processing involved identifying data resources, creating folder for project items, publishing hosted feature layers, sanitizing problematic data, adding geometries, and sharing items.</p>
+        <img class="main-img" src="img/data-acquisition-and-pre-processing.jpg" alt="data-acquisition-and-pre-processing">
+      </section>
+      <section id="arcgis-map-viewer">
+        <h1>ArcGIS Map Viewer</h1>
+        <p>ArcGIS Map Viewer is an ArcGIS Online application that allows the users to create interactive web maps to tell stories and answer questions (Esri, 2022). The web maps for this project were all created using ArcGIS Map Viewer. To allow the client to replicate or enhance the web maps in the future, a Python script was also created for publishing and configuraing web maps.</p>
+      </section>
+      <section id="arcgis-dashboards">
+        <h1>ArcGIS Dashboards</h1>
+        <p>ArcGIS Dashboards enables users to convey information by presenting location-based analytics using intuitive and interactive data visualizations on a single screen, helping them to make informed decision (Esri, 2022). An operational dashboard was created using ArcGIS Dashboards for this project. A number of elements, such as indicators and lists, were utilized in the dashboard to promote effective communication.</p>
+      </section>
+      <section id="arcgis-experience-builder">
+        <h1>ArcGIS Experience Builder</h1>
+        <p>ArcGIS Experience Builder is an ArcGIS Online application to transform the data into web applications easily (Esri, 2022). An interactive web application was created using ArcGIS Experience Builder for this project. It was made of a set of widgets to give information to the users about the distribution of the development activities within the city.</p>
+      </section>
+      <section id="arcgis-storymaps">
+        <h1>ArcGIS Story Maps</h1>
+        <p>ArcGIS StoryMaps is a story authoring web-based application to share maps in the context of narrative text and other multimedia content (Esri, 2022). This application was used to create an educational article about the development activities in Toronto. The content of the story map was authored based on the official website of the City of Toronto, with the approval from the client.</p>
+      </section>
+      <section id="maintenance">
+        <h1>Maintenance</h1>
+        <p>The maintenance process was implemented using ArcGIS API for Python. It involved installing Manage Notebook Code Dependencies (MNCD), running OverwriteFS tool, sanitizing problematic data, and adding geometries to existing features. A scheduled tasks was also set up to run the script automatically on a daily basis.</p>
+        <img class="main-img" src="img/maintenance.jpg" alt="maintenance">
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-light">Copyright © 2022 Fleming Flamingos. All Rights Reserved.</span>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$('.dropdown-item').on('click', function(){$('.navbar-collapse').collapse('hide');});</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

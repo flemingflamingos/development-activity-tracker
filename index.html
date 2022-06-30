@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<!-- Authors: Terrie-Ann Broomfield, Xin Wen, Peggy Wong -->
+<!-- Date Created: 2022-06-26 -->
+<!-- Date Modified: 2022-06-26 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Activity Tracker - City of Toronto</title>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="any">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 px-sm-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <b>Development Activity Tracker</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dark-blue-navbar" aria-controls="dark-blue-navbar" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dark-blue-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="methodology.html" data-bs-toggle="dropdown" aria-expanded="false">Methodology</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="methodology.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#data-acquisition-and-pre-processing">Data Acquisition & Pre-Processing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-map-viewer">ArcGIS Map Viewer</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-dashboards">ArcGIS Dashboards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-experience-builder">ArcGIS Experience Builder</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-storymaps">ArcGIS StoryMaps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#maintenance">Maintenance</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="results.html" data-bs-toggle="dropdown" aria-expanded="false">Results</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="results.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-maps">Web Maps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#dashboard">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-application">Web Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#story-map">Story Map</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#python-scripts">Python Scripts</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#supplemental-deliverables">Supplemental Deliverables</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Cover -->
+    <div class="cover px-3 py-5">
+      <div class="text-center px-3 py-5">
+        <p class="title">Development Activity Tracker - City of Toronto</p>
+        <p class="subtitle">GIS Applied Research Collaborative Project</p>
+        <img class="logo" src="img/fleming-college.svg" alt="fleming-college-logo">
+        <img class="logo" src="img/city-of-toronto.svg" alt="city-of-toronto-logo">
+      </div>
+    </div>
+    <!-- Main -->
+    <main class="container py-5">
+      <section>
+        <h1>Abstract</h1>
+        <p>Toronto is the largest city in Canada and the fourth largest in North America. Development activities take place daily which makes tracking these activities difficult without an available map illustrating the process. The City of Toronto presented this issue and our team set out to provide a solution to track all the development activities within the city using Geographic Information System technology. The data acquired from the City of Toronto Open Data Portal, was published as hosted feature layers through ArcGIS API for Python to create a web map symbolizing unique values for each development application, and a heat map to show the development hotspots. The web maps were made in compliance with Accessibility for Ontarians with Disabilities Act, thus people with colour deficiencies will be able to differentiate between the application types and clearly understand the information illustrated. A dashboard was generated from the web maps to display the statistics of development activities throughout the city. A web application and a story map were also created to further enhance the interactions of the users. A maintenance script was created to allow the hosted feature layers to be updated automatically, minimizing the maintenance effort by the client. Finally, a setup guide was created to provide step-by-step instructions to set up web maps and automated updates.</p>
+      </section>
+      <section>
+        <h1>Client</h1>
+        <p>The client for this project is the City of Toronto, represented by Scott Whynot, the Graphics and Visualization Supervisor. Dulini Ratnayake, the Graphics and Visualization Program Manager, and Harrison Thomas, the Graphics and Visualization Supervisor, have also participated in the meetings to discuss the project and provide feedbacks.</p>
+      </section>
+      <section>
+        <h1>Study Area</h1>
+        <p>Toronto, the capital of the province of Ontario, is located on the north-western shore of Lake Ontario. It is the largest city in Canada and the fourth largest city in North America, with a population of about 2.9 million. People have lived in Toronto since shortly after the last ice age, where the first urban community was established as the Town of York in 1793. Through years of development, Toronto has emerged as one of the most liveable and multicultural urban places in the world today (City of Toronto, 2022).</p>
+      </section>
+      <section>
+        <h1>Objective</h1>
+        <p>The main goal of this project was to alleviate the difficulties when researching development activities in Toronto by providing a visual presentation of the process of development activities, with the following objectives to meet the project requirements:</p>
+        <p>・ To track all the development activities in Toronto using ArcGIS technology.</p>
+        <p>・ To promote effective communication using a visually engaging design while meeting the standards of the Accessibility for Ontarians with Disabilities Act.</p>
+        <p>・ To automate the updating process and minimize the effort of maintenance by the client.</p>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-light">Copyright © 2022 Fleming Flamingos. All Rights Reserved.</span>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$('.dropdown-item').on('click', function(){$('.navbar-collapse').collapse('hide');});</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- results.html -->
+<!-- Authors: Terrie-Ann Broomfield, Xin Wen, Peggy Wong -->
+<!-- Date Created: 2022-06-26 -->
+<!-- Date Modified: 2022-06-26 -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Development Activity Tracker - City of Toronto</title>
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="any">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-3 px-sm-5 py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <b>Development Activity Tracker</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dark-blue-navbar" aria-controls="dark-blue-navbar" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dark-blue-navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="methodology.html" data-bs-toggle="dropdown" aria-expanded="false">Methodology</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="methodology.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#data-acquisition-and-pre-processing">Data Acquisition & Pre-Processing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-map-viewer">ArcGIS Map Viewer</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-dashboards">ArcGIS Dashboards</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-experience-builder">ArcGIS Experience Builder</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#arcgis-storymaps">ArcGIS StoryMaps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="methodology.html#maintenance">Maintenance</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="results.html" data-bs-toggle="dropdown" aria-expanded="false">Results</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="results.html">Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-maps">Web Maps</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#dashboard">Dashboard</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#web-application">Web Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#story-map">Story Map</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#python-scripts">Python Scripts</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="results.html#supplemental-deliverables">Supplemental Deliverables</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Cover -->
+    <div class="cover px-3 py-5">
+      <div class="text-center px-3 py-5">
+        <p class="title">Results</p>
+      </div>
+    </div>
+    <!-- Main -->
+    <main class="container py-5">
+      <section id="overview">
+        <h1>Overview</h1>
+        <p>To alleviate the difficulties when researching development activities in Toronto, a series of web solutions were created to meet the project objectives. Here is an overview of the main deliverables of this project:</p>
+        <img class="main-img" src="img/main-deliverables.jpg" alt="main-deliverables">
+        <p>The following supplemental deliverables are not listed as the main deliverables of the project but were created to support the main deliverables.</p>
+        <img class="main-img" src="img/supplemental-deliverables.jpg" alt="supplemental-deliverables">
+      </section>
+      <section id="web-maps">
+        <h1>Web Maps</h1>
+        <p>The main map lists all currently active and inactive Community Planning applications, Committee of Adjustment applications and Toronto Local Appeal Body appeals received by the City between January 1st 2008 till present. It can be viewed through ArcGIS Map Viewer.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=d7455aa93d2440508a07e872415059eb" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/main-map.jpg" alt="main-map">
+        <p>The heat map visualizes the magnitude of development activities in different locations, helping the users to understand the patterns and identify the hot spots of the development activities in Toronto. Similar to the main map, the heat map can be viewed through ArcGIS Map Viewer.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=1ff4b037ec8d420b928d853b1de122f5" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/heat-map.jpg" alt="heat-map">
+      </section>
+      <section id="dashboard">
+        <h1>Dashboard</h1>
+        <p>The operational dashboard integrates the web maps and all relevant information on a single screen, presenting dynamic results in an easy-to-read format and allowing the users to explore the data interactively.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/apps/dashboards/5b5195282e4f4d959022efecc33c232b" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/dashboard.jpg" alt="dashboard">
+      </section>
+      <section id="web-application">
+        <h1>Web Application</h1>
+        <p>The web application displays the web maps and information using customized widgets and templates, where the responsive design allows the web application to run seamlessly on desktop and mobile devices.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://experience.arcgis.com/experience/499362549fde45edb0f3b958060ac1c6" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/web-application.jpg" alt="web-application">
+      </section>
+      <section id="story-map">
+        <h1>Story Map</h1>
+        <p>The story map provides information about the development activities in Toronto, in addition to the web maps. Through the story map, the users can learn more about the development history of Toronto and the current development application types that are available.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://storymaps.arcgis.com/stories/110e1015cfc8455590998a8050d1998b" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/story-map.jpg" alt="story-map">
+      </section>
+      <section id="python-scripts">
+        <h1>Python Scripts</h1>
+        <p>The setup script utilizes ArcGIS API for Python to publish hosted feature layers and set up web maps for this project easily. The client can run the setup script through ArcGIS Notebooks.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/home/notebook/notebook.html?id=0d2c3177fe4241cd8b6ee0e036ebc0da" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/setup-script.jpg" alt="setup-script">
+        <p>The maintenance script utilizes ArcGIS API for Python to update the hosted feature layers of the Development Activity Tracker on a daily basis. The client can host the maintenance script through ArcGIS Notebooks to utilize the scheduled task functionality.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/home/notebook/notebook.html?id=4adc613f0696473883a28ac3d5acc360" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/maintenance-script.jpg" alt="maintenance-script">
+      </section>
+      <section id="supplemental-deliverables">
+        <h1>Supplemental Deliverables</h1>
+        <p>The hosted feature layer of the development applications dataset was published from the source CSV file. The hosted feature layer of the regional municipal boundary was published from the source shapefile. Both hosted feature layers were added to the web maps.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/home/item.html?id=503a36d0dc5f42f29614742d0272697a" target="_blank" role="button">Development Applications &raquo;</a> <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/home/item.html?id=e960047df387456185e38e8f6aac616c" target="_blank" role="button">Regional Municipal Boundary &raquo;</a>
+        </p>
+        <img class="main-img" src="img/development-applications.jpg" alt="development-applications">
+        <img class="main-img" src="img/regional-municipal-boundary.jpg" alt="regional-municipal-boundary">
+        <p>The historic aerial imagery map was used in the story map only for educational purposes. It was applied to the swipe block in the story map, allowing the users to compare with the current aerial imagery interactively.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=4564d41ac2ca40bca239908543c20c55" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/historic-aerial-imagery.jpg" alt="historic-aerial-imagery">
+        <p>The feedback survey was powered by ArcGIS Survey 123 and was linked from the dashboard and the web application, allowing the users to provide feedbacks such as problematic data. All submissions will be stored in the client’s account for review, and the client can use the received feedbacks for future enhancements.</p>
+        <p>
+          <a class="btn btn-secondary" href="https://survey123.arcgis.com/share/6bf1627106fa4fbc8f8010a9b90e98a7" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/feedback-survey.jpg" alt="feedback-survey">
+        <p>Finally, the step-by-step Python setup guide was created to assist the client to set up the web maps and the automated updates. The setup guide includes detailed instructions with screenshots in plain language, thus the staffs who did not use ArcGIS Notebooks before can follow the instructions and set up the scripts easily.</p>
+        <p>
+          <a class="btn btn-secondary" href="python-setup-guide.pdf" target="_blank" role="button">Link &raquo;</a>
+        </p>
+        <img class="main-img" src="img/python-setup-guide.jpg" alt="python-setup-guide">
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-light">Copyright © 2022 Fleming Flamingos. All Rights Reserved.</span>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>$('.dropdown-item').on('click', function(){$('.navbar-collapse').collapse('hide');});</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

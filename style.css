@@ -1,0 +1,109 @@
+/* style.css */
+/* Author: Terrie-Ann Broomfield, Xin Wen, Peggy Wong */
+/* Date Created: 2022-06-26 */
+/* Date Modified: 2022-06-26 */
+
+*{
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+html{
+    scroll-padding-top: 6rem;
+}
+
+body{
+    padding-top: 72px;
+}
+
+nav{
+    background-color: #102c3c;
+}
+
+.cover{
+    position: relative;
+}
+
+.cover:before{
+    content: "";
+    background-image: url('img/cover.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.title{
+    color: #23395d;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #102c3c;
+}
+
+.subtitle{
+    color: #23395d;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px #102c3c;
+}
+
+.logo{
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main{
+    background-color: #faffff;
+}
+
+main h1{
+    color: #165788;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+main p{
+    color: #102c3c;
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+}
+
+.main-img{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.member{
+    text-align: center;
+}
+
+.job-title{
+    color: #56717d;
+    font-style: italic;
+}
+
+footer{
+    background-color: #102c3c;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 407px){
+    .navbar-brand{
+        font-size: 1.1rem;
+    }
+}
